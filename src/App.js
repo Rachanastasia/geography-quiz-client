@@ -1,10 +1,16 @@
+import React from 'react';
+import './css/variables.css';
+import './css/main.css';
+import Router from './Router';
+import Header from './components/Header';
 
 
 function App() {
   return (
-    <div className="App">
-      <h1>HI</h1>
-    </div>
+    <main className="App">
+      <Header />
+      <Router />
+    </main>
   );
 }
 
