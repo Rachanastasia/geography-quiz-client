@@ -7,7 +7,7 @@ import Register from './components/Register';
 function Router() {
   return (
     <Switch>
-      <Route path='/' exact />
+      <Route path='/' exact component={Register} />
       <Route path='/login' component={Login} />
       <Route path='/register' component={Register} />
     </Switch>

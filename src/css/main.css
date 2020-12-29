@@ -10,9 +10,10 @@ img{
   width: 100%;
 }
 
-main{
+.App{
   width: 100%;
-  min-height: calc(100vh- 100px);
+  height: inherit;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -20,6 +21,27 @@ main{
   font-family: var(--font);
   line-height: var(--line-spacing);
 }
+
+section{
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  padding: var(--spacer-sm) var(--spacer-lg);
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: var(--spacer-lg);
+  color: var(--colors-black);
+}
+
+section:first-of-type{
+  padding-top: var(--spacer-lg);
+}
+
+section:last-of-type{
+  padding-bottom: var(--spacer-lg);
+}
+
 
 h2, h3{
   font-size: var(--font-size-med);
@@ -32,6 +54,11 @@ p{
 
 p:last-of-type{
   padding-bottom: 0;
+}
+
+a{
+  text-decoration: none;
+  color: var(--colors-accent);
 }
 
 button, .button{
@@ -56,101 +83,14 @@ button:hover, .button:hover{
   color: var(--colors-white);
 }
 
-section{
-  display: flex;
-  flex-direction: column;
-  width: inherit;
-  padding: var(--spacer-sm) var(--spacer-lg);
-  justify-content: flex-start;
-  height: 100%;
-  color: var(--colors-black);
-}
-
-section:first-of-type{
-  padding-top: var(--spacer-lg);
-}
-
-section:last-of-type{
-  padding-bottom: var(--spacer-lg);
-}
 
 
 
 
 
 
-/*HEADER STYLES */
-header{
-  width: inherit;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--colors-accent);
-  color: var(--colors-white);
-  padding: var(--spacer-sm);
-}
-
-h1{
-  font-size: var(--font-size-lg);
-  padding: 0 var(--spacer-sm) var(--spacer-lg);
-}
-
-header button,
-header .button{
-  color: var(--colors-white);
-  border: 1px solid var(--colors-white);
-}
-
-header button:focus, header .button:focus,
-header button:hover, header .button:hover{
-  background-color: var(--colors-accent-light);
-}
-/* END HEADER STYLES */
 
 
-
-/*STYLES FOR FORM ELEMENTS*/
-form{
-  width: inherit;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-fieldset{
-  width: inherit;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: var(--spacer-sm) 0;
-  outline: 0;
-  border: 0;
-}
-
-label{
-  padding-right: var(--spacer-sm);
-}
-
-input{
-  font-size: var(--font-size-sm);
-  border: 1px solid grey;
-  
-}
-
-input, textarea{
-  flex: 3;
-  width: 100%;
-  padding: var(--spacer-tiny) ;
-  font-size: var(--font-size-sm);
-  outline: 0;
-}
-
-input:focus, textarea:focus{
-  outline: 2px solid var(--colors-accent);
-}
-/*END FORM STYLES*/
 
 
 
@@ -203,11 +143,7 @@ footer p{
       flex-direction: row;
       justify-content: space-between;
   }
-  h1{
-      padding-left: 0;
-      padding-bottom: var(--spacer-sm);
-      padding-top: var(--spacer-sm);
-  }
+ 
 }
 
 @media all and (min-width: 600px){

@@ -1,6 +1,7 @@
 import React from 'react';
 import './css/variables.css';
 import './css/main.css';
+import './css/form.css';
 import Router from './Router';
 import Header from './components/Header';
 

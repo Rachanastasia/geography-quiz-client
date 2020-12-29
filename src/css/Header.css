@@ -1,0 +1,27 @@
+
+header{
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--colors-accent);
+  color: var(--colors-white);
+  padding: var(--spacer-sm);
+  height: var(--button-width);
+}
+
+h1{
+  font-size: var(--font-size-lg);
+}
+
+header button,
+header .button{
+  color: var(--colors-white);
+  border: 1px solid var(--colors-white);
+}
+
+header button:focus, header .button:focus,
+header button:hover, header .button:hover{
+  background-color: var(--colors-accent-light);
+}
