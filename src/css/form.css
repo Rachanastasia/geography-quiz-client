@@ -2,7 +2,7 @@
 form{
   width: inherit;
   display: flex;
-  max-width: 400px;
+  max-width: calc(4 * var(--button-width));
   flex-direction: column;
   justify-content: center;
   align-items: center;

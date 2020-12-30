@@ -19,9 +19,40 @@ header button,
 header .button{
   color: var(--colors-white);
   border: 1px solid var(--colors-white);
+  margin-top: var(--spacer-med);
+}
+
+a{
+  padding: 0;
 }
 
 header button:focus, header .button:focus,
 header button:hover, header .button:hover{
-  background-color: var(--colors-accent-light);
+  background-color: var(--colors-white);
+  color: var(--colors-accent);
+  border: 1px solid var(--colors-accent);
+}
+
+
+@media all and (min-width: 500px){
+  header{
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  header button,
+  header .button{
+    margin-top: 0;
+  }
+ 
+}
+
+@media all and (min-width: 600px){
+   header{
+       padding: var(--spacer-sm) var(--spacer-lg);
+   }
+
+   p{
+       padding-bottom: 0;
+   }
 }
